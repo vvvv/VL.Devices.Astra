@@ -121,5 +121,4 @@
     </Canvas>
   </Patch>
   <DocumentDependency Id="FGN0uZ46tGLPR3PW3qgRk9" Location="../../../VL.Devices.Astra.vl" />
-  <NugetDependency Id="Vqqd6okFbkOLqrMO1EYM8p" Location="VL.OpenCV" Version="0.0.0.0" />
 </Document>

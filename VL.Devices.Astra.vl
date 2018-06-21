@@ -1133,5 +1133,4 @@
   <NugetDependency Id="OLSploOjZR5PTmDoCpj3SQ" Location="VL.CoreLib" Version="0.79.17-g63a3d4ba77" />
   <NugetDependency Id="NtE0K0hem8PNAwpf3Ex8eP" Location="VL.CoreLib.VVVV" Version="0.79.17-g63a3d4ba77" />
   <PlatformDependency Id="QDcxMcBW91ZMrK86TfD41B" Location="./lib/AstraDotNet.dll" />
-  <NugetDependency Id="KBqNeWYrRbNPwxlXbhGfDs" Location="VL.OpenCV" Version="0.0.0.0" />
 </Document>
