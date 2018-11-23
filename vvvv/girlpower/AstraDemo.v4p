@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug36.1.dtd" >
-   <PATCH nodename="C:\Users\joreg\Documents\repos\vl-others\VL.Devices.Astra\vvvv\girlpower\AstraDemo.v4p" systemname="AstraDemo" filename="C:\Users\joreg\Documents\repos\vl-others\VL.Astra\vvvv\girlpower\AstraDemo.v4p" scrollx="15" scrolly="15">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha37.1.dtd" >
+   <PATCH nodename="C:\Work\VL.Devices.Astra\vvvv\girlpower\AstraDemo.v4p" systemname="AstraDemo" filename="C:\Users\joreg\Documents\repos\vl-others\VL.Astra\vvvv\girlpower\AstraDemo.v4p" scrollx="15" scrolly="15">
    <BOUNDS type="Window" left="750" top="7440" width="7800" height="8310">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
@@ -115,7 +115,7 @@
    <NODE systemname="Astra (Devices)" filename="vl\VVVV.Devices.Astra.vl" nodename="Astra (Devices)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="750" top="795" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Connection String" slicecount="1" values="device/sensor0" visible="1">
+   <PIN pinname="Connection String" slicecount="1" visible="1" values="device/sensor0">
    </PIN>
    <PIN pinname="Depth Image" visible="1">
    </PIN>
