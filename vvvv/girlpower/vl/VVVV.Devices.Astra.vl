@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.88">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.94">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
-    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Devices">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Devices" CanvasType="FullCategory">
       <!--
 
     ************************ Astra ************************
@@ -22,7 +22,7 @@
             <Pin Id="IyasV0o24DZLV2I8gVy82H" Name="Body Status" Kind="OutputPin" Bounds="389,1720" />
             <Pin Id="JUwwhaID2tmQLtqPel06H2" Name="Joints" Kind="OutputPin" Bounds="469,1724" />
           </Patch>
-          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi">
+          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
             <Node Bounds="332,174,50,13" Id="OBc90idwOWwMAoX0F3Ll8L">
               <p:NodeReference LastCategoryFullName="Devices.Astra" LastSymbolSource="VL.Astra.vl" LastDependency="VVVV.Devices.Astra.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -30,6 +30,7 @@
                 <CategoryReference Kind="Category" Name="Astra" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="GfkFbZaHiRdQcomxHZfhEl" Name="Connection String" Kind="InputPin" />
+              <Pin Id="KSwqTSvi1ZHL74pPedQ1gr" Name="Enabled" Kind="InputPin" />
               <Pin Id="PaJILrCQT1qO0RuiSG0fab" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="A9Vo4XEQa1pNyhitHzp2Hx" Bounds="209,384" />
@@ -76,6 +77,8 @@
                   <Pin Id="UlJzuNKXvRjOaLLqZaWmIK" Name="DepthImage" Kind="OutputPin" />
                   <Pin Id="GKV35sZPY8LPjrgxhQaLES" Name="BodyStatus" Kind="OutputPin" />
                   <Pin Id="RQSi4mOQ9sRQKXWjBSfid6" Name="Joints" Kind="OutputPin" />
+                  <Pin Id="CwmgUnsyYS6QEQItPSbRTs" Name="Id" Kind="OutputPin" />
+                  <Pin Id="OJVfQjD2hI4MavKenrhQ4J" Name="CenterOfMass" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
@@ -92,6 +95,8 @@
               <Pin Id="I6YwweqXe0PMUGLZDWcX6P" Name="DepthImage" Kind="OutputPin" />
               <Pin Id="Q7fIMH4KvA0QJV4mqy6FHs" Name="BodyStatus" Kind="OutputPin" />
               <Pin Id="UpcivyaRCG6P9dqDOWkj3D" Name="Joints" Kind="OutputPin" />
+              <Pin Id="BBKtuv2zRMtOI2vneuBY7N" Name="Id" Kind="OutputPin" />
+              <Pin Id="ELqexdqANsnOIgY6wCywcc" Name="CenterOfMass" Kind="OutputPin" />
             </Node>
           </Canvas>
           <ProcessDefinition Id="FHNLl8GWgcVOJzRkkPI83E">
