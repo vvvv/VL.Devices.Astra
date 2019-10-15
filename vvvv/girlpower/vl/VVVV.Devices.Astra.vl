@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.88">
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0840-g9ad0c1e66d" Version="0.128">
   <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
   <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+  <DocumentDependency Id="FGN0uZ46tGLPR3PW3qgRk9" Location="../../../VL.Devices.Astra.vl" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
-    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Devices">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Devices" CanvasType="FullCategory">
       <!--
 
     ************************ Astra ************************
@@ -17,12 +18,12 @@
         <Patch Id="CzjSvRY5dvXQDxmAOA8mZj">
           <Patch Id="ESJZDDS0I02LAWDOx9RJVV" Name="Create" />
           <Patch Id="OkqGvJfa3PDOppp4PFQghD" Name="Update">
-            <Pin Id="N7fV90wFmvvP5AKeLOqyCQ" Name="Depth Image" Kind="OutputPin" Bounds="295,263" />
             <Pin Id="Q592ADxkgJPNdM9MC5CxZf" Name="Connection String" Kind="InputPin" Bounds="534,74" />
+            <Pin Id="N7fV90wFmvvP5AKeLOqyCQ" Name="Depth Image" Kind="OutputPin" Bounds="295,263" />
             <Pin Id="IyasV0o24DZLV2I8gVy82H" Name="Body Status" Kind="OutputPin" Bounds="389,1720" />
             <Pin Id="JUwwhaID2tmQLtqPel06H2" Name="Joints" Kind="OutputPin" Bounds="469,1724" />
           </Patch>
-          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi">
+          <Canvas Id="C4yd3S6BFv9NWqJ2WO3OFi" CanvasType="Group">
             <Node Bounds="332,174,50,13" Id="OBc90idwOWwMAoX0F3Ll8L">
               <p:NodeReference LastCategoryFullName="Devices.Astra" LastSymbolSource="VL.Astra.vl" LastDependency="VVVV.Devices.Astra.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -30,7 +31,7 @@
                 <CategoryReference Kind="Category" Name="Astra" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="GfkFbZaHiRdQcomxHZfhEl" Name="Connection String" Kind="InputPin" />
-              <Pin Id="PaJILrCQT1qO0RuiSG0fab" Name="Output" Kind="OutputPin" />
+              <Pin Id="OrSRYhlSjOzLvhVSMQ0yVj" Name="Result" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="A9Vo4XEQa1pNyhitHzp2Hx" Bounds="209,384" />
             <Node Bounds="396,245,58,13" Id="CQ2F5AVCyrUNnJr0phshAM">
@@ -44,7 +45,7 @@
               <Pin Id="FwejjM9p1AqLFmqKR2qX3z" Name="Value" Kind="OutputPin" />
               <Pin Id="NNLu9hd2NgYPkzGW34IQAx" Name="On Data" Kind="OutputPin" />
             </Node>
-            <Pad Id="RA0ttQZOrDFOeQmMm0DnR1" Comment="On Data" Bounds="551,301,40,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="RA0ttQZOrDFOeQmMm0DnR1" Comment="On Data" Bounds="551,299,40,19" ShowValueBox="true" isIOBox="true" />
             <ControlPoint Id="KRoxHpowGppMIJsfpiyNJ9" Bounds="431,381" />
             <ControlPoint Id="JhoDQivHzKaNoZZmDTbu51" Bounds="517,380" />
             <Node Bounds="207,243,109,109" Id="ElrMZ1aRUmOOtcBSA60ORS">
@@ -104,10 +105,8 @@
           <Link Id="M4CDLGd6thYPeU5ghtky33" Ids="NNLu9hd2NgYPkzGW34IQAx,RA0ttQZOrDFOeQmMm0DnR1" />
           <Link Id="U9cUcjYN7r7Nrgoif9g5vw" Ids="KRoxHpowGppMIJsfpiyNJ9,IyasV0o24DZLV2I8gVy82H" IsHidden="true" />
           <Link Id="G2LaeljFKZxNrIaqa4VkSg" Ids="JhoDQivHzKaNoZZmDTbu51,JUwwhaID2tmQLtqPel06H2" IsHidden="true" />
-          <Link Id="OQHnoR2UTHrPdH1HKxgaai" Ids="PaJILrCQT1qO0RuiSG0fab,EtviSQZ7z20OBS636n8aUL" />
           <Link Id="IqpAWsBnjP9Onb4lpYJjEV" Ids="V0Js6OB6JZXOZ8Zcr0ttUq,Lerr66bTsTfL2gLFzyOau5" IsHidden="true" />
           <Link Id="QoblTJAFVACM47a7WSF3ZT" Ids="LuCoAgJpoikPCrM8UoO0D3,EbCbfOBA3s4Nh6Nuwe69xW" IsHidden="true" />
-          <Link Id="EiVilfMEDNbPuqZABTdbke" Ids="PaJILrCQT1qO0RuiSG0fab,LiKJXMIjaj4OX4ckOvCWnu" />
           <Link Id="HAvKtBad8e8QVm8QD7ShEO" Ids="VigUYUycDKILnOkaNyn1HI,A9Vo4XEQa1pNyhitHzp2Hx" />
           <Link Id="OnjIi4OLYgjOBN1b67Bw7j" Ids="DUKemqcSLTLPokOlRpayPy,GfkFbZaHiRdQcomxHZfhEl" />
           <Link Id="B9RRnHbBzBuQKYF8RxsIaQ" Ids="Q592ADxkgJPNdM9MC5CxZf,DUKemqcSLTLPokOlRpayPy" IsHidden="true" />
@@ -116,9 +115,35 @@
           <Link Id="MAgMsikOtxkQUozgR5eaRf" Ids="Q7fIMH4KvA0QJV4mqy6FHs,KRoxHpowGppMIJsfpiyNJ9" />
           <Link Id="CDjnGNjvAZkM87m8DGTkTL" Ids="UpcivyaRCG6P9dqDOWkj3D,JhoDQivHzKaNoZZmDTbu51" />
           <Link Id="Hb0kBEfJEwoOWItHTxNP8H" Ids="UlJzuNKXvRjOaLLqZaWmIK,LuCoAgJpoikPCrM8UoO0D3" />
+          <Link Id="VQqV4qSjEYnQU9892m6OSG" Ids="OrSRYhlSjOzLvhVSMQ0yVj,EtviSQZ7z20OBS636n8aUL" />
+          <Link Id="OFIufTwJq8AQYjXL0FJnD3" Ids="OrSRYhlSjOzLvhVSMQ0yVj,LiKJXMIjaj4OX4ckOvCWnu" />
         </Patch>
       </Node>
     </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="F5RykQTdMDXP4U4bHWTloq">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="UvXc26EJdCgLf06amzaKfX">
+        <Canvas Id="On2apvLwZFgOTcft0Nh0AR" BordersChecked="false" CanvasType="Group" />
+        <Patch Id="NT0i16WUlUdMSB89nHlgkU" Name="Create" />
+        <Patch Id="VJjfA3QQc4pPpzkXb4O8id" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="QLupljaEo46OTDL9Sv5Tbz">
+          <Fragment Id="ORBtK7kVyeFMKrxWqwnpsN" Patch="NT0i16WUlUdMSB89nHlgkU" Enabled="true" />
+          <Fragment Id="KllrxeiYdSQQYIoiklhsfr" Patch="VJjfA3QQc4pPpzkXb4O8id" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
   </Patch>
-  <DocumentDependency Id="FGN0uZ46tGLPR3PW3qgRk9" Location="../../../VL.Devices.Astra.vl" />
 </Document>
