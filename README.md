@@ -1,4 +1,4 @@
-# VL.Devices.Kinect2
+# VL.Devices.Astra
 Set of nodes to use the Astra depth camera from Orbbec in vl.
 
 Be sure to have the [Orbbec Camera Driver >= 4.3.0.10](https://orbbec3d.com/develop/) installed.
