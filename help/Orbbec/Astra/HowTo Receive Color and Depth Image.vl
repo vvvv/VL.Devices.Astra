@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OYVGAaXriDoPWmN634PD1S" LanguageVersion="2019.2.0-0262-0297bd0cbe" Version="0.128">
+<Document xmlns:p="property" Id="OYVGAaXriDoPWmN634PD1S" LanguageVersion="2019.2.0-0269-16240c4ad8" Version="0.128">
   <NugetDependency Id="GFJ2zNemr9FPLcFcNf5ugC" Location="VL.CoreLib" Version="2019.2.0-0257-g243e7b57e7" />
   <Patch Id="DwdOsidoavnM4meoRUIHDh">
     <Canvas Id="IaB9D0FvpUwQTG7JJiH1Rm" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -21,8 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="Astra" />
             </p:NodeReference>
             <Pin Id="OIEkHKfBNjwOqbTK2h1Edx" Name="Connection String" Kind="InputPin" />
-            <Pin Id="IXQHzn9kLpfPWbQgpyRYUQ" Name="Color Images" Kind="OutputPin" />
-            <Pin Id="HRCn891xwxANoMy7J0RyMi" Name="Depth Images" Kind="OutputPin" />
+            <Pin Id="KVtG6QL6S4RM4hJCTDFnw2" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="450,536,125,19" Id="EhjyAg3bgFAOBKlgFxU5E5">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
@@ -75,18 +74,6 @@
             <Pin Id="DYuPeQ6WzbCL7Z4DMMgu77" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="JU6JlarZfvDPxS8gjtVchM" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Node Bounds="431,316,88,19" Id="TijW7f4UmD2MGndusyIHEs">
-            <p:NodeReference LastCategoryFullName="Graphics.Imaging" LastSymbolSource="VL.Imaging.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="HoldLatestCopy" />
-            </p:NodeReference>
-            <Pin Id="LkncRIODMARL8he5oSGLUA" Name="Async Notifications" Kind="InputPin" />
-            <Pin Id="Hm1TtbFDKOiL2ylLOhxs1X" Name="Timeout" Kind="InputPin" />
-            <Pin Id="NzGhiKxYz3gLDvO2GwYsNb" Name="Reset" Kind="InputPin" />
-            <Pin Id="NX5z6idbDCPLiZc0xBeXWR" Name="Result" Kind="OutputPin" />
-            <Pin Id="Rc0SXfEYOsPQawwAKwAoyV" Name="Swap Count" Kind="OutputPin" />
-            <Pin Id="S13f7lHAjsEPZ26CP3tRRB" Name="Drop Count" Kind="OutputPin" />
-          </Node>
           <Node Bounds="450,612" Id="P9chyd7dOYfN3MsDIzmYZr">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -131,32 +118,22 @@
             <Pin Id="NQNYCCPjP5hMPVZZi1nkWg" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="DqKj832KjlUOrE12VBN7D8" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="575,321,88,19" Id="BsgeNZ9AatRP5JiXG1xvGR">
-            <p:NodeReference LastCategoryFullName="Graphics.Imaging" LastSymbolSource="VL.Imaging.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="HoldLatestCopy" />
-            </p:NodeReference>
-            <Pin Id="RmJmxSYn8U5MBd8CFmNV0z" Name="Async Notifications" Kind="InputPin" />
-            <Pin Id="QnCEoeGFIsJPBSMItk3yq5" Name="Timeout" Kind="InputPin" />
-            <Pin Id="SInwcry0wzUN0TcHpmXs1a" Name="Reset" Kind="InputPin" />
-            <Pin Id="Phs98UJeuQQPnTFx7kNdU4" Name="Result" Kind="OutputPin" />
-            <Pin Id="KC3OkdsMJ3PPxuRfcExpBx" Name="Swap Count" Kind="OutputPin" />
-            <Pin Id="BLKgp9hBFOhLkpsqtNRb4m" Name="Drop Count" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="649,264,40,19" Id="OWIyGykk4hLOum2FtOhJfH">
+          <Node Bounds="455,365,69,19" Id="Ge41xm5n3pfNS2FXPkXRXa">
             <p:NodeReference LastCategoryFullName="Devices.Astra" LastSymbolSource="VL.Devices.Astra.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Astra" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
             </p:NodeReference>
-            <Pin Id="Aek5iwB3eKKOVvT7jhC7bz" Name="Connection String" Kind="InputPin" />
-            <Pin Id="DEnuRzt6DBfMxkCZcqqc91" Name="Color Images" Kind="OutputPin" />
-            <Pin Id="QapDni3ARbHLag2KDNsYBK" Name="Depth Images" Kind="OutputPin" />
+            <Pin Id="E8gHdpA9fMlOwRniLyW5Ux" Name="Input" Kind="InputPin" />
+            <Pin Id="OR2yAa5bryAOOfeE30rEX3" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="RfWxgQIu01QNKaQZwddHda" Comment="Connection String" Bounds="651,224,78,15" ShowValueBox="true" isIOBox="true" Value="device/sensor1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
+          <Node Bounds="614,365,71,19" Id="MDRaeNjyaq7LCiO01xyu9p">
+            <p:NodeReference LastCategoryFullName="Devices.Astra" LastSymbolSource="VL.Devices.Astra.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DepthImage" />
+            </p:NodeReference>
+            <Pin Id="URlMgjUXJtZP27oG2zXx5o" Name="Input" Kind="InputPin" />
+            <Pin Id="Hms4cnzt1OpMeM02oMD6Ur" Name="Result" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="FZCSNtEXWToPsfNdpcQYu6" Name="Create" />
         <Patch Id="S43FawM2c5AO2UVrL3kHdI" Name="Update" />
@@ -168,13 +145,12 @@
         <Link Id="N0ce6FxSBL8LsWzlXwr24t" Ids="BwKj0fJfSLjNpHoiyo09Md,Eo8g3yQiph4Mx7luYAzQ3M" />
         <Link Id="T5CfnLtYQdZNKEqUnv1XF5" Ids="HRUKXMBzX2cLcEoRrESXaL,TEY4XMRR4ntOq1uLlJhs93" />
         <Link Id="SPHfNlYEux3LI7g54Mkj5F" Ids="Gr7Va6KvRdSMrKPwDPG9ba,OIEkHKfBNjwOqbTK2h1Edx" />
-        <Link Id="CucOnUB3gI9NukyeiAF16d" Ids="NX5z6idbDCPLiZc0xBeXWR,DxIojSXPXWYQS8uHguIaeN" />
         <Link Id="HMVo74osCJ1LprMKnGZp64" Ids="DqKj832KjlUOrE12VBN7D8,EpmH39JX0QeO5UDEHaROQD" />
-        <Link Id="TUhrWFiVwoANIUYrmIQjoE" Ids="Phs98UJeuQQPnTFx7kNdU4,D2LTSaFGiP8OXqJbhqhlq1" />
         <Link Id="Ajclvv96sJCQBRaU3f28gT" Ids="SNH3k9JPcUJMujHPOUTN5B,VG5EFIpoCftOePMSw5dayE" />
-        <Link Id="JCLPaoi16xFPxgIXa6mXuq" Ids="RfWxgQIu01QNKaQZwddHda,Aek5iwB3eKKOVvT7jhC7bz" />
-        <Link Id="JtcZUj4gug2M23gBam92xe" Ids="DEnuRzt6DBfMxkCZcqqc91,RmJmxSYn8U5MBd8CFmNV0z" />
-        <Link Id="TA3fcKuLZleMDAtHixzf8m" Ids="IXQHzn9kLpfPWbQgpyRYUQ,LkncRIODMARL8he5oSGLUA" />
+        <Link Id="Mul0wGn7n05Ou3VK5KxOUM" Ids="KVtG6QL6S4RM4hJCTDFnw2,E8gHdpA9fMlOwRniLyW5Ux" />
+        <Link Id="H1EYLCw9yQMM9gpRJm99e9" Ids="OR2yAa5bryAOOfeE30rEX3,DxIojSXPXWYQS8uHguIaeN" />
+        <Link Id="CkemFUW1d3POdLqmi58JHD" Ids="Hms4cnzt1OpMeM02oMD6Ur,D2LTSaFGiP8OXqJbhqhlq1" />
+        <Link Id="MmLd9ifWucEMLWG1FfH4MA" Ids="KVtG6QL6S4RM4hJCTDFnw2,URlMgjUXJtZP27oG2zXx5o" />
       </Patch>
     </Node>
   </Patch>
