@@ -6,12 +6,13 @@
     <title>VL.Devices.Astra</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
-    <projectUrl>http://vvvv.org</projectUrl>
+    <projectUrl>https://github.com/vvvv/VL.Devices.astra</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A VL wrapper for Orbbec Astra</summary>
     <description>Orbbec Astra for VL</description>
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
-    <tags>VL, orbbec, astra, skeleton, camera, video, depth</tags>
+    <tags>VL, orbbec, astra, skeleton, camera, video, depth, body, tracking</tags>
+	<license type="expression">LGPL-3.0-only</license>
   </metadata>
   <files>
     <file src="..\lib\**" target="lib\" exclude="" />
