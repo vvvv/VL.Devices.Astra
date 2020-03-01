@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FwLR0gVNtAmND4atPRZrJF" LanguageVersion="2019.2.0-0269-16240c4ad8" Version="0.128">
+<Document xmlns:p="property" Id="FwLR0gVNtAmND4atPRZrJF" LanguageVersion="2019.2.0-0270-88195a725e" Version="0.128">
   <NugetDependency Id="OLSploOjZR5PTmDoCpj3SQ" Location="VL.CoreLib" Version="2019.2.0-0257-g243e7b57e7" />
   <PlatformDependency Id="QDcxMcBW91ZMrK86TfD41B" Location="./lib/AstraDotNet.dll" />
   <Patch Id="INCmdCIZZVSLMUbnB0qYIq">
@@ -583,17 +583,7 @@
                     <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" />
-                      <Choice Kind="OperationCallFlag" Name="Subscribe" />
-                      <PinReference Kind="OutputPin" Name="Result">
-                        <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System.Resources" LastSymbolSource="CoreLibBasics.vl">
-                          <Choice Kind="TypeFlag" Name="Provider" />
-                          <p:TypeArguments>
-                            <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                              <Choice Kind="TypeFlag" Name="IDisposable" />
-                            </TypeReference>
-                          </p:TypeArguments>
-                        </p:DataTypeReference>
-                      </PinReference>
+                      <Choice Kind="OperationCallFlag" Name="Subscribe (Provider)" />
                     </p:NodeReference>
                     <Pin Id="GyJSgYt0sWYMjYhe4Cgtii" Name="Source" Kind="InputPin" />
                     <Pin Id="KkmCUhrKZXZP2P2LAn6EVe" Name="Result" Kind="OutputPin" />
