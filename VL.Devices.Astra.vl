@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FwLR0gVNtAmND4atPRZrJF" LanguageVersion="2019.2.0-0270-88195a725e" Version="0.128">
-  <NugetDependency Id="OLSploOjZR5PTmDoCpj3SQ" Location="VL.CoreLib" Version="2019.2.0-0257-g243e7b57e7" />
+<Document xmlns:p="property" Id="FwLR0gVNtAmND4atPRZrJF" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="OLSploOjZR5PTmDoCpj3SQ" Location="VL.CoreLib" Version="2020.1.0" />
   <PlatformDependency Id="QDcxMcBW91ZMrK86TfD41B" Location="./lib/AstraDotNet.dll" />
   <Patch Id="INCmdCIZZVSLMUbnB0qYIq">
     <Canvas Id="QRf0PhFm8jYL0IkYe5Tjv0" DefaultCategory="Devices.Astra" CanvasType="FullCategory">
@@ -55,103 +55,6 @@
           <Link Id="DklCTuEvVExPmFZ0mwC2Ty" Ids="F8Tm00o0QjrMJq2bPBOfnG,Sr84rcnKNkDPRuFY4eQ31x" IsHidden="true" />
           <Link Id="EKcC2RSvdcHPaayj73nwHF" Ids="GUs0Hu3a6f9Owd8UDn1T7A,DzcU940zSIuMrb8H8j2NHt" />
           <Link Id="DPpLLxK9d5zOR1J3NKHYeP" Ids="DzcU940zSIuMrb8H8j2NHt,CjclSQ2D3htPWx0bCpIJoc" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Frame ************************
-
--->
-      <Node Name="Frame" Bounds="471,163" Id="JIQpCoE1oMoLkZTFQ49vHb">
-        <p:NodeReference>
-          <Choice Kind="ClassDefinition" Name="Class" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <Patch Id="DS6A2IcDgTFNHIgdzNkcOJ">
-          <Canvas Id="KGVE3ddhNI4OYcuUrfrses">
-            <Pad Id="BYkZ6nwc0h5L4SzfnumWdT" SlotId="As2G3Id2d5qQWfHNoGOAMg" Bounds="562,336">
-              <p:ValueBoxSettings>
-                <p:showvalue p:Type="Boolean">false</p:showvalue>
-              </p:ValueBoxSettings>
-            </Pad>
-            <Pad Id="Ic8IQSSQTfeQSCK5o9BgUu" SlotId="A9KxEy0kMoJQd0i56gGEre" Bounds="349,335" />
-            <Pad Id="UVbgFcgJPvyM4zhImzWhmW" SlotId="Mjt8sYH0g9xPpZyPhtQSbM" Bounds="452,337" />
-            <Pad Id="GXTf9bo75mkMBwDzX7TLrG" SlotId="PhRf67HclSvMtIOEnzEv2n" Bounds="657,333" />
-            <ControlPoint Id="GTwgeBhENTxP8HEfgeCxKN" Bounds="345,292" />
-            <ControlPoint Id="FOYkq3UUFtIPWizsC9FiaJ" Bounds="452,291" />
-            <ControlPoint Id="PeLaJxRWpM2PhCw6vi2v5R" Bounds="562,293" />
-            <ControlPoint Id="Llz7Y3REulHL7Sh0nh59qb" Bounds="658,293" />
-            <ControlPoint Id="FaRzkEoF6UyPlIcEs9pUIt" Bounds="348,387" />
-            <ControlPoint Id="FOFTNQTgjLmMc6AcWbADih" Bounds="462,389" />
-            <ControlPoint Id="Tlc4s9D6HODM7fTrosAyGv" Bounds="573,379" />
-            <ControlPoint Id="Q3Nt90FEhRwNQUKCzseESi" Bounds="661,375" />
-          </Canvas>
-          <Patch Id="MNLzgGGUv12Lu8qRwMHhZM" Name="Create">
-            <Pin Id="FnTj8lyMmQqNvbmie5VJKD" Name="ColorImage" Kind="InputPin" />
-            <Pin Id="NGyYCVBBFFYOFR4Qs6nvtW" Name="DepthImage" Kind="InputPin" />
-            <Pin Id="ND0UswRPDO4OXp9dF8hDdc" Name="BodyStatus" Kind="InputPin" />
-            <Pin Id="MCUVmmDn8haPR9gws9vqBf" Name="Joints" Kind="InputPin" />
-          </Patch>
-          <Patch Id="OiH3g4LxqQYMOzXwZUkWQG" Name="Update" />
-          <ProcessDefinition Id="R2Yf2PlTfcoL7OfAYuxlFV">
-            <Fragment Id="SKR9wU5tf4ZLijpTDHFYrq" Patch="MNLzgGGUv12Lu8qRwMHhZM" Enabled="true" />
-            <Fragment Id="Pp1Za3fX6QrK9ni815ipVr" Patch="OiH3g4LxqQYMOzXwZUkWQG" Enabled="true" />
-            <Fragment Id="NHeTN772Nf5M63qeQWtkCi" Patch="HvGORJ5jmMpLurZcUhJ8F6" Enabled="true" />
-          </ProcessDefinition>
-          <Slot Id="A9KxEy0kMoJQd0i56gGEre" Name="ColorImage">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="Image" />
-              <FullNameCategoryReference ID="Graphics.Imaging" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Slot Id="Mjt8sYH0g9xPpZyPhtQSbM" Name="DepthImage">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="Image" />
-              <FullNameCategoryReference ID="Graphics.Imaging" />
-            </p:TypeAnnotation>
-          </Slot>
-          <Slot Id="As2G3Id2d5qQWfHNoGOAMg" Name="BodyStatus">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="Spread" />
-              <p:TypeArguments>
-                <TypeReference>
-                  <Choice Kind="TypeFlag" Name="BodyStatus" />
-                </TypeReference>
-              </p:TypeArguments>
-            </p:TypeAnnotation>
-          </Slot>
-          <Slot Id="PhRf67HclSvMtIOEnzEv2n" Name="Joints">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="Spread" />
-              <p:TypeArguments>
-                <TypeReference>
-                  <Choice Kind="TypeFlag" Name="Vector3" />
-                </TypeReference>
-              </p:TypeArguments>
-            </p:TypeAnnotation>
-          </Slot>
-          <Link Id="VxmY8yXmhTnPa6VUjBdYVo" Ids="GTwgeBhENTxP8HEfgeCxKN,Ic8IQSSQTfeQSCK5o9BgUu" />
-          <Link Id="N3YazhVCJ63OjQ8oYsfHnv" Ids="FnTj8lyMmQqNvbmie5VJKD,GTwgeBhENTxP8HEfgeCxKN" IsHidden="true" />
-          <Link Id="DXKSeyvRep5LSPxZzFJ8KW" Ids="FOYkq3UUFtIPWizsC9FiaJ,UVbgFcgJPvyM4zhImzWhmW" />
-          <Link Id="SSJHUjcFQy6Mn4krqnKUDe" Ids="NGyYCVBBFFYOFR4Qs6nvtW,FOYkq3UUFtIPWizsC9FiaJ" IsHidden="true" />
-          <Link Id="A1ZPOD5bGssLEbpSrPBAnN" Ids="PeLaJxRWpM2PhCw6vi2v5R,BYkZ6nwc0h5L4SzfnumWdT" />
-          <Link Id="BxsTztbuWAMLNlNNCyMMEP" Ids="ND0UswRPDO4OXp9dF8hDdc,PeLaJxRWpM2PhCw6vi2v5R" IsHidden="true" />
-          <Link Id="VTqKXbx1lxNPVGa9qpM1jf" Ids="Llz7Y3REulHL7Sh0nh59qb,GXTf9bo75mkMBwDzX7TLrG" />
-          <Link Id="OVwKQardBPTNIZg8gZVHjD" Ids="MCUVmmDn8haPR9gws9vqBf,Llz7Y3REulHL7Sh0nh59qb" IsHidden="true" />
-          <Link Id="AtIOU1vm269LE7VPvquQoE" Ids="Ic8IQSSQTfeQSCK5o9BgUu,FaRzkEoF6UyPlIcEs9pUIt" />
-          <Link Id="N1mP6uUy2GIQQ7Z3p4jV9f" Ids="FaRzkEoF6UyPlIcEs9pUIt,FN8oOk8G7T2Lp8biCCyCc1" IsHidden="true" />
-          <Link Id="VgOFc8Yv2vJMKpA3WPDSku" Ids="UVbgFcgJPvyM4zhImzWhmW,FOFTNQTgjLmMc6AcWbADih" />
-          <Link Id="HOvdnAbO0k6Ogreq4iTyAd" Ids="FOFTNQTgjLmMc6AcWbADih,GCSHMvX0iqoOLq1VXvxUqj" IsHidden="true" />
-          <Link Id="Ai0jZTdFC6yQFdxAWLYH9E" Ids="BYkZ6nwc0h5L4SzfnumWdT,Tlc4s9D6HODM7fTrosAyGv" />
-          <Link Id="EB8JQoGNvlkOMEiLM3EMtE" Ids="Tlc4s9D6HODM7fTrosAyGv,P4W6CRGbXQjMRHBD3Ljjvo" IsHidden="true" />
-          <Link Id="JT3aCqFfPi7OfWZUHD5IGJ" Ids="GXTf9bo75mkMBwDzX7TLrG,Q3Nt90FEhRwNQUKCzseESi" />
-          <Link Id="JGga9liZtTAOipwBBN5l6u" Ids="Q3Nt90FEhRwNQUKCzseESi,HI8tiH1ZDW6OlOGygGs2UK" IsHidden="true" />
-          <Patch Id="HvGORJ5jmMpLurZcUhJ8F6" Name="Split">
-            <Pin Id="FN8oOk8G7T2Lp8biCCyCc1" Name="ColorImage" Kind="OutputPin" />
-            <Pin Id="GCSHMvX0iqoOLq1VXvxUqj" Name="DepthImage" Kind="OutputPin" />
-            <Pin Id="P4W6CRGbXQjMRHBD3Ljjvo" Name="BodyStatus" Kind="OutputPin" />
-            <Pin Id="HI8tiH1ZDW6OlOGygGs2UK" Name="Joints" Kind="OutputPin" />
-          </Patch>
         </Patch>
       </Node>
       <Canvas Id="Fn2g36C9UJVPERs2zVDe2c" Name="Internal" Position="220,76">
@@ -1606,7 +1509,7 @@
           <Choice Kind="TypeFlag" Name="Body" />
         </p:TypeAnnotation>
         <Patch Id="CXtLEepz9XRPP7c0F1gp7k">
-          <Canvas Id="DzDwa12AIHwNFE8GSJqSTy" BordersChecked="false" CanvasType="Group" />
+          <Canvas Id="DzDwa12AIHwNFE8GSJqSTy" CanvasType="Group" />
           <ProcessDefinition Id="CvHIuGiW1mWPHMZhKFy24J" IsHidden="true" />
         </Patch>
       </Node>
@@ -1785,5 +1688,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QtFcJpmssi1MPvwjQ4k2Ez" Location="VL.Skia" Version="2019.2.0-0257-g243e7b57e7" />
+  <NugetDependency Id="QtFcJpmssi1MPvwjQ4k2Ez" Location="VL.Skia" Version="2020.1.0" />
 </Document>
