@@ -13,6 +13,9 @@
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
     <tags>VL, orbbec, astra, skeleton, camera, video, depth, body, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
+	<dependencies>
+        <dependency id="VL.Skia3d" version="[0.1.4-alpha]" />
+    </dependencies>
   </metadata>
   <files>
     <file src="..\lib\**" target="lib\" exclude="" />
