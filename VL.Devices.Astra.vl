@@ -3900,7 +3900,7 @@
               <Pin Id="Jd34GW313o0OER7HFJRAmT" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="QnoFQKOfsvJOCR5lkaUWEa" Bounds="362,825" />
-            <Node Bounds="159,278,556,523" Id="RrE1gY5kkHXPOQcRLPxDiZ">
+            <Node Bounds="159,278,376,524" Id="RrE1gY5kkHXPOQcRLPxDiZ">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -3930,7 +3930,7 @@
                   <Pin Id="PfckAOeErPAODO5dnubAhc" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="HTOBbVFAYpKMvlzP1qTKpm" Name="Joints" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="199,424,504,357" Id="CCMTwvqT8n2P2GyTLGVeJd">
+                <Node Bounds="199,424,332,358" Id="CCMTwvqT8n2P2GyTLGVeJd">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -4030,7 +4030,7 @@
                           <Pin Id="EoRUAEn3br6LvgGDPiGERR" Name="To" Kind="InputPin" />
                           <Pin Id="MMgFXRdczvPOVe1RNWhwb6" Name="Output" Kind="OutputPin" />
                         </Node>
-                        <Pad Id="TKLL6TToJbQM11te3M3r0D" Comment="" Bounds="362,568,40,28" ShowValueBox="true" isIOBox="true" Value="640, 480">
+                        <Pad Id="TKLL6TToJbQM11te3M3r0D" Comment="" Bounds="362,568,53,26" ShowValueBox="true" isIOBox="true" Value="640, 480">
                           <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
                             <Choice Kind="TypeFlag" Name="Vector2" />
                           </p:TypeAnnotation>
@@ -4499,7 +4499,7 @@
                 <Link Id="QGldECsBl83MgGYIEhzmsW" Ids="IQMUMZziHp2NyQd3YvReNN,TCJuHmcA8CXOcy4vb12Gmc" />
               </Patch>
             </Node>
-            <Node Bounds="849,367,137,19" Id="LzePN8vNKiULOFYzHP7eAk">
+            <Node Bounds="607,465,137,19" Id="LzePN8vNKiULOFYzHP7eAk">
               <p:NodeReference LastCategoryFullName="Devices.Astra.Stickman (Depth)" LastSymbolSource="VL.Devices.Astra.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="CreateAspectRect" />
@@ -4517,14 +4517,14 @@
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="Nz5DFztZTvuPRrDiHrLrdh" Name="Mode" Kind="InputPin" DefaultValue="AutoHeight">
+              <Pin Id="Nz5DFztZTvuPRrDiHrLrdh" Name="Mode" Kind="InputPin" DefaultValue="AutoWidth">
                 <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
                   <Choice Kind="TypeFlag" Name="SizeMode" />
                 </p:TypeAnnotation>
               </Pin>
               <Pin Id="E0x4cdE6hxSPRgN85maH0b" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="841,281,71,26" Id="EBLvFbivDVkM2lKDlSUfVL">
+            <Node Bounds="599,379,71,26" Id="EBLvFbivDVkM2lKDlSUfVL">
               <p:NodeReference LastCategoryFullName="2D.Rectangle" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Rectangle" />
@@ -4535,19 +4535,24 @@
               <Pin Id="UEn03iR1XQoNfXZoMfRdyq" Name="Position" Kind="OutputPin" />
               <Pin Id="MZILHNM1zoOMkYLQ1ocERI" Name="Size" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="GMWnJOUgmelNVdJEdETGap" Bounds="843,237" />
-            <ControlPoint Id="BfWMGLsuSbELMUD716jOdD" Bounds="952,243" />
-            <Node Bounds="856,426,51,26" Id="Ekq73LqT5vhNewyy1DS5eO">
+            <ControlPoint Id="GMWnJOUgmelNVdJEdETGap" Bounds="601,335" />
+            <ControlPoint Id="BfWMGLsuSbELMUD716jOdD" Bounds="710,341" />
+            <Node Bounds="614,524,51,26" Id="Ekq73LqT5vhNewyy1DS5eO">
               <p:NodeReference LastCategoryFullName="2D.Rectangle" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Rectangle" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
               </p:NodeReference>
               <Pin Id="DJ0d8A6ScqgPzeGlp8qoHB" Name="Input" Kind="StateInputPin" />
-              <Pin Id="O01nRG0osGrLrqBpzmlj3A" Name="Anchor" Kind="InputPin" />
+              <Pin Id="O01nRG0osGrLrqBpzmlj3A" Name="Anchor" Kind="InputPin" DefaultValue="Center">
+                <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="RectangleAnchor" />
+                </p:TypeAnnotation>
+              </Pin>
               <Pin Id="SH2TWhlrTdjPJHv6dRSoMN" Name="Position" Kind="OutputPin" />
               <Pin Id="OEKOZAeGZMINLllK5CXPry" Name="Size" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="Qby8BtBebheORvGkwn15rx" Bounds="765,366" />
           </Canvas>
           <ProcessDefinition Id="F8zyVH8eQDaOGhkjoixGGd">
             <Fragment Id="FIxFXNMVzkKL2tY7bHnrYF" Patch="PA53nDtJ2Y7PHyH9phCcz8" Enabled="true" />
@@ -4578,6 +4583,7 @@
             <Pin Id="KEs07lnp3I6O8ecPcY55Sb" Name="Input" Kind="InputPin" Bounds="429,246" />
             <Pin Id="HaHsLHT0y6DPIGqOKbSq3b" Name="Bounds" Kind="InputPin" Bounds="1141,486" />
             <Pin Id="V03kTOXGRsjLEJUd43e1TV" Name="Anchor" Kind="InputPin" Bounds="1217,503" />
+            <Pin Id="P83rL8ZbE0pLv4LIbDPXJB" Name="Mode" Kind="InputPin" Bounds="1007,268" />
             <Pin Id="D1buaiEz1jQLlmmRZp3ksq" Name="Color" Kind="InputPin" Bounds="698,359" />
             <Pin Id="NFrDbR1m1A6NtP0lpkn5oJ" Name="Stroke Width" Kind="InputPin" Bounds="717,382" DefaultValue="15">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -4616,7 +4622,8 @@
           <Link Id="LGEaSbHPnSxL4eEWUOzLpl" Ids="IEopBuRWwpyNuT9mHhViCM,EoRUAEn3br6LvgGDPiGERR" />
           <Link Id="VDaMMgqEPjVMie1rQVgdTK" Ids="BfWMGLsuSbELMUD716jOdD,Qq2C4bCdiUQNQY7uFFjPIl" />
           <Link Id="ArJTSfP1C5GNT6FNYvTWPS" Ids="BfWMGLsuSbELMUD716jOdD,JFMXlz2mDbpMejPB8dGNHl" />
-          <Link Id="HH2k08jjzQDLW93vKmtntm" Ids="BfWMGLsuSbELMUD716jOdD,O01nRG0osGrLrqBpzmlj3A" />
+          <Link Id="OHpMbScrCFjLf6gWMcOSdJ" Ids="Qby8BtBebheORvGkwn15rx,Nz5DFztZTvuPRrDiHrLrdh" />
+          <Link Id="DhHrW8SloqKNZuqbpiyqYb" Ids="P83rL8ZbE0pLv4LIbDPXJB,Qby8BtBebheORvGkwn15rx" IsHidden="true" />
         </Patch>
       </Node>
       <!--
