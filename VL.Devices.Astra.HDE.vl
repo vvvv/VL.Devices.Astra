@@ -5,10 +5,10 @@
     <Canvas Id="QYFOXjrMgATQTcpBMDj2hQ" DefaultCategory="Devices.Astra.HDE" CanvasType="FullCategory">
       <!--
 
-    ************************ BodyViewer ************************
+    ************************ SkeletonViewer ************************
 
 -->
-      <Node Name="BodyViewer" Bounds="205,265" Id="OvQGhU45LwBL4j2BC6BG38">
+      <Node Name="SkeletonViewer" Bounds="205,265" Id="OvQGhU45LwBL4j2BC6BG38">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" Name="Class" />
           <FullNameCategoryReference ID="Primitive" />
@@ -69,7 +69,7 @@
             <Node Bounds="460,501,86,19" Id="GAE3FMtD9FpL6pkNu1ymyB">
               <p:NodeReference LastCategoryFullName="Devices.Astra.HDE" LastSymbolSource="VL.Devices.Astra.HDE.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="BodyWidget" />
+                <Choice Kind="ProcessAppFlag" Name="SkeletonWidget" />
               </p:NodeReference>
               <Pin Id="DoZMMvqZ9BiQM09EPjDwlu" Name="Value" Kind="InputPin" />
               <Pin Id="HsFovFDbJwNODLB0Ryr8hs" Name="Paint" Kind="InputPin" />
@@ -145,7 +145,7 @@
                 <p:NodeReference>
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
-                  <CategoryReference Kind="Category" Name="BodyViewer" />
+                  <CategoryReference Kind="Category" Name="SkeletonViewer" />
                 </p:NodeReference>
                 <Pin Id="BVN0T8JYC2ZNkzhu9TlYMa" Name="Output" Kind="StateOutputPin" />
               </Node>
@@ -161,10 +161,10 @@
       </Node>
       <!--
 
-    ************************ BodyWidget ************************
+    ************************ SkeletonWidget ************************
 
 -->
-      <Node Name="BodyWidget" Bounds="472,267" Id="Pmu7bRRn8zGPJlDkDI8HeN">
+      <Node Name="SkeletonWidget" Bounds="472,267" Id="Pmu7bRRn8zGPJlDkDI8HeN">
         <p:NodeReference>
           <Choice Kind="RecordDefinition" Name="Record" />
           <FullNameCategoryReference ID="Primitive" />
@@ -190,7 +190,7 @@
               <p:NodeReference>
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
-                <CategoryReference Kind="ClassType" Name="BodyWidget (View)" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="ClassType" Name="SkeletonWidget (View)" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="FzZIMYTg7JCLsLhx5G5NKw" Name="Output" Kind="StateOutputPin" />
             </Node>
@@ -211,7 +211,7 @@
           </Patch>
           <Slot Id="RuoMCZhg6MPNEgZi4nLdY4" Name="Value">
             <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="Body" />
+              <Choice Kind="TypeFlag" Name="Skeleton" />
             </p:TypeAnnotation>
           </Slot>
           <Patch Id="PGE5hxJS6wfK9ompQzJxHS" Name="Update">
@@ -237,10 +237,10 @@
       </Node>
       <!--
 
-    ************************ BodyWidget (View) ************************
+    ************************ SkeletonWidget (View) ************************
 
 -->
-      <Node Name="BodyWidget (View)" Bounds="666,266" Id="U8TcSrB090mOSknjuKJGxh">
+      <Node Name="SkeletonWidget (View)" Bounds="666,266" Id="U8TcSrB090mOSknjuKJGxh">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" Name="Class" />
           <FullNameCategoryReference ID="Primitive" />
@@ -275,7 +275,7 @@
             <Node Bounds="435,333,71,26" Id="Q8ofZZMM5zHMTWEWvnRse0">
               <p:NodeReference>
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="RecordType" Name="BodyWidget" />
+                <CategoryReference Kind="RecordType" Name="SkeletonWidget" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
               </p:NodeReference>
               <Pin Id="GHFlZglmOAqNWtKfVJI9aU" Name="Input" Kind="StateInputPin" />
@@ -440,10 +440,10 @@
                 <Patch Id="L7FvQJOAymRML3ShhUJaRC" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="OF0Oi5IHNBmLKkP1L7UVxT" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="846,526,34,26" Id="LjEpspxbfdmPcKuWj6p4RR">
-                  <p:NodeReference LastCategoryFullName="Devices.Astra.Body" LastSymbolSource="VL.Devices.Astra.vl">
+                  <p:NodeReference LastCategoryFullName="Devices.Astra.Skeleton" LastSymbolSource="VL.Devices.Astra.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="Body" />
                     <Choice Kind="OperationCallFlag" Name="Id" />
+                    <CategoryReference Kind="ClassType" Name="Skeleton" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="KagvHaNxqJlLeOxqoxMSBv" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Hv2Km8eENFkOxSfhtcViEo" Name="Output" Kind="StateOutputPin" />
