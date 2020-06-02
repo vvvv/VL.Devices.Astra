@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2020.1.0.53" Version="0.128">
+<Document xmlns:p="property" Id="AUeZcyP0BPZMj1LWSAvY9H" LanguageVersion="2020.1.2.135" Version="0.128">
   <Patch Id="JBtPzl71qIKNFbTrwnyTGp">
     <Canvas Id="SFmkqv266JHLuOC9PkL2Tn" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -156,7 +156,7 @@
       </p:NodeReference>
       <Patch Id="AakuIj5uHvGOzeYYASa5w1">
         <Canvas Id="OmMTMn4stX9OcpjNA5bkqW" CanvasType="Group">
-          <Pad Id="UBW8b29shqoM7mIApeAsS5" Comment="Value" Bounds="432,514,137,15" ShowValueBox="true" isIOBox="true" Value="0, 1, 0.7599995, 0.3100007">
+          <Pad Id="UBW8b29shqoM7mIApeAsS5" Comment="Value" Bounds="432,514,137,15" ShowValueBox="true" isIOBox="true" Value="0, 1, 0.7599995, 0.3500005">
             <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
@@ -185,14 +185,14 @@
             <Pin Id="IxPzdemXFrgNY7O1BhfoKF" Name="Enabled" Kind="InputPin" />
             <Pin Id="U2QdrUG4vJFPTkyN6acyNY" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="IvbDNWpFUGeQbD54r1a52R" Comment="Size" Bounds="331,515,49,15" ShowValueBox="true" isIOBox="true" Value="0.005">
+          <Pad Id="IvbDNWpFUGeQbD54r1a52R" Comment="Size" Bounds="331,515,35,16" ShowValueBox="true" isIOBox="true" Value="0.005">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:maximum p:Type="Single">0.5</p:maximum>
               <p:minimum p:Type="Single">0.001</p:minimum>
-              <p:precision p:Type="Int32">5</p:precision>
+              <p:precision p:Type="Int32">3</p:precision>
               <p:stepsize p:Type="Single">0.001</p:stepsize>
             </p:ValueBoxSettings>
           </Pad>
@@ -332,8 +332,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.0" />
-  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.0" />
+  <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.2" />
+  <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.2" />
   <NugetDependency Id="U98q7v2PBvcP5vzK579zef" Location="VL.Skia3d" Version="0.0.0.0" />
   <NugetDependency Id="Fr1lFd26pUjQRTqXXWmwXS" Location="VL.Devices.Astra" Version="0.0.0.0" />
 </Document>

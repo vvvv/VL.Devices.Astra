@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2020.1.0.53" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2020.1.2.135" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.2" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -153,7 +153,7 @@
                   <CategoryReference Kind="ClassType" Name="Skeleton" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
                 <Pin Id="TsgZnSf86qrLqIX7LLGSD3" Name="Input" Kind="StateInputPin" />
-                <Pin Id="VaQbUlbiytaOLBExezq5Ie" Name="Id" Kind="OutputPin" />
+                <Pin Id="UfVHWkDY93VPLrCKmgan3o" Name="ID" Kind="OutputPin" />
                 <Pin Id="R7TUd36qIOTLVAoldNb6mu" Name="Center Of Mass" Kind="OutputPin" />
                 <Pin Id="KZ4K96bl6cSQLNiRPVgCab" Name="Tracking Status" Kind="OutputPin" />
                 <Pin Id="PMRzcI2A6i9NxzJouuF3K6" Name="Joint Positions" Kind="OutputPin" />
@@ -335,6 +335,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.2" />
   <NugetDependency Id="BfE8S35gumwOeHCP1y5K12" Location="VL.Devices.Astra" Version="0.0.0.0" />
 </Document>
