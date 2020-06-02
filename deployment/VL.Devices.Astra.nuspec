@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Astra</id>
-    <version>$version$</version>
+    <version>0.0.0</version>
     <title>VL.Devices.Astra</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -14,7 +14,7 @@
     <tags>VL, orbbec, astra, skeleton, camera, video, depth, body, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<dependencies>
-        <dependency id="VL.Skia3d" version="[0.1.4-alpha]" />
+        <dependency id="VL.Skia3d" version="1.0.36-alpha" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
