@@ -1,7 +1,7 @@
 # VL.Devices.Astra
 Set of nodes to use the Astra depth camera from Orbbec in VL.
 
-Try it with vvvv, the visual live-programming environment for .NET
+Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
 
 ## Requirements:
