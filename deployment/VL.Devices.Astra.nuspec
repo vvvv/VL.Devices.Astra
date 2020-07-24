@@ -2,16 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Astra</id>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
     <title>VL.Devices.Astra</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.Devices.astra</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>A VL wrapper for Orbbec Astra</summary>
-    <description>Orbbec Astra for VL</description>
-    <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
-    <tags>VL, orbbec, astra, skeleton, camera, video, depth, body, tracking</tags>
+    <summary>Orbbec Astra for vvvv</summary>
+    <description>Orbbec Astra for vvvv</description>
+    <tags>VL, orbbec, astra, camera, video, depth, skeleton, body, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<dependencies>
         <dependency id="VL.Skia3d" version="1.0.36-alpha" />
