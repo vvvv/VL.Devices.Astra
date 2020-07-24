@@ -24,7 +24,7 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.27-alpha
       with:
-        nuspec: deployment\VL.Devices.AzureKinect.nuspec
+        nuspec: deployment\VL.Devices.Astra.nuspec
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         icon-dst: ./deployment/nugeticon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
