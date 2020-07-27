@@ -13,7 +13,7 @@
     <tags>VL, orbbec, astra, camera, video, depth, skeleton, body, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<dependencies>
-        <dependency id="VL.Skia3d" version="1.0.36-alpha" />
+        <dependency id="VL.Skia3d" version="1.1.1" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
