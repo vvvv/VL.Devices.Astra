@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="MAxdYPtimWBMv4UKoYwp5f" LanguageVersion="2020.1.3.147" Version="0.128">
+<Document xmlns:p="property" Id="MAxdYPtimWBMv4UKoYwp5f" LanguageVersion="2022.5.0-0570-g77c905300e" Version="0.128">
   <NugetDependency Id="GowQjEC3BnmLtfx2YShcc5" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="EZ4HuupTYTZLQJDZAnUbZU">
     <Canvas Id="Nj2gjmQfLhbNm404eipiCK" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -16,26 +16,23 @@
       <Patch Id="R5uxCrytiOJPQf4cthqaWN">
         <Canvas Id="Ogtn9ksNkhbPGyjcpbZgl3" CanvasType="Group">
           <Node Bounds="339,322,125,19" Id="JAGcPhwsLYQN1rj4qXhq9O">
-            <p:NodeReference LastCategoryFullName="Devices.Astra" LastSymbolSource="VL.Devices.Astra.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Astra" LastDependency="VL.Devices.Astra.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Astra" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="R4IFVnqC21xPMY1VesBJM3" Name="Connection String" Kind="InputPin" />
             <Pin Id="AiOCOKi3zDdM0EA867IwzF" Name="Body Tracking License String" Kind="InputPin" />
-            <Pin Id="Fp1qm0mEVCyMle9fhmfs24" Name="Mirror Images" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="Fp1qm0mEVCyMle9fhmfs24" Name="Mirror Images" Kind="InputPin" />
             <Pin Id="PRytToWAldGOh8sR5DVhQb" Name="Skeleton Profile" Kind="InputPin" />
             <Pin Id="RUdmiaPCIIbNShWotIZFjA" Name="Skeleton Optimization" Kind="InputPin" />
             <Pin Id="SBl6twhPogJPaL9xLS7BET" Name="Body Orientation" Kind="InputPin" />
             <Pin Id="J0M3aGwMBrBOwXAlHn6Yig" Name="Body Features" Kind="InputPin" />
+            <Pin Id="KvlVnxdmPaAO0Ko23uhqtL" Name="Enabled" Kind="InputPin" />
             <Pin Id="BcNkTNAZPsSOD7zheTR6C3" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="339,416,60,19" Id="KGTjTUAb0CQMCFQXlLVxPT">
-            <p:NodeReference LastCategoryFullName="Devices.Astra" LastSymbolSource="VL.Devices.Astra.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Astra" LastDependency="VL.Devices.Astra.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Skeletons" />
             </p:NodeReference>
@@ -45,7 +42,7 @@
             <Pin Id="SNtBqedAiC1PCk0Zr2TzmE" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="234,568,439,118" Id="OHBYYe3MHLtOBGFocSM4cm">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -58,7 +55,7 @@
               <Patch Id="J0QfqDOO0iwLC8imycnkhl" Name="Update" ManuallySortedPins="true" />
               <Patch Id="Kcx7sRqwCDBLoeYumxWpXH" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="496,606,165,26" Id="AFey1j43PJ2Mi9p7HoKNyp">
-                <p:NodeReference LastCategoryFullName="Devices.AzureKinect.Skeleton" LastSymbolSource="VL.Devices.AzureKinect.Body.vl">
+                <p:NodeReference LastCategoryFullName="Devices.Astra.Skeleton" LastDependency="VL.Devices.Astra.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="Skeleton" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
@@ -76,7 +73,7 @@
                 <Pin Id="DCKYD3AqFXRMciobBGZmps" Name="Right Hand" Kind="OutputPin" />
               </Node>
               <Node Bounds="339,606,125,19" Id="KoLHlNYhPnCLQdcsJ5mrjb">
-                <p:NodeReference LastCategoryFullName="Devices.Astra" LastSymbolSource="VL.Devices.Astra.vl">
+                <p:NodeReference LastCategoryFullName="Devices.Astra" LastDependency="VL.Devices.Astra.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Boxman" />
                 </p:NodeReference>
@@ -84,30 +81,14 @@
                 <Pin Id="ECqJ9nC2RHDPO9xBG0w7jC" Name="Input" Kind="InputPin" />
                 <Pin Id="CGFld2La5zxNcFT03zs9bO" Name="Color" Kind="InputPin" />
                 <Pin Id="LTC1UvgV4B0P6kFL6npnZR" Name="Stroke Width" Kind="InputPin" />
-                <Pin Id="GzKCYYrDdqQMheyeZUAHFo" Name="Show Boxes" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="Boolean" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Pin Id="CkU2pUDvvpmNPyOLkbYDJr" Name="Show Axis" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="Boolean" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Pin Id="MjYOe9oBeKRP9rgknE4obC" Name="Show Labels" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="Boolean" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Pin Id="Eir63JlilsxL9KSmAG1yCx" Name="Enabled" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="Boolean" />
-                  </p:TypeAnnotation>
-                </Pin>
+                <Pin Id="GzKCYYrDdqQMheyeZUAHFo" Name="Show Boxes" Kind="InputPin" />
+                <Pin Id="CkU2pUDvvpmNPyOLkbYDJr" Name="Show Axis" Kind="InputPin" />
+                <Pin Id="MjYOe9oBeKRP9rgknE4obC" Name="Show Labels" Kind="InputPin" />
+                <Pin Id="Eir63JlilsxL9KSmAG1yCx" Name="Enabled" Kind="InputPin" />
                 <Pin Id="SFzczeaARiqNySDTGTYc4m" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="246,606,65,19" Id="Fq4TRiauFW3O9qwFznGEyx">
-                <p:NodeReference LastCategoryFullName="Devices.Astra" LastSymbolSource="VL.Devices.Astra.vl">
+                <p:NodeReference LastCategoryFullName="Devices.Astra" LastDependency="VL.Devices.Astra.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Stickman" />
                 </p:NodeReference>
@@ -121,18 +102,18 @@
             </Patch>
           </Node>
           <Node Bounds="243,857,145,19" Id="R7ervbQyfezOcsRsMDrTGS">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
             <Pin Id="JXnCpM35MTaMTEkOgHU6ak" Name="Bounds" Kind="InputPin" DefaultValue="1149, 51, 741, 623">
-              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="TKGceYAn5hWN2Wz9P9F12w" Name="Input" Kind="InputPin" />
             <Pin Id="VgE4bhnYxd0Mvqcpk1XtLT" Name="Color" Kind="InputPin" DefaultValue="0.6399999, 0.6399999, 0.6399999, 1">
-              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
             </Pin>
@@ -146,7 +127,7 @@
             <Pin Id="UJKdtIccmpoL8AByEqc9DO" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="47,706,145,19" Id="UEvCDNp4hHhOYLdE0UKhBQ">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Layers" LastSymbolSource="VL.Skia3d.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Layers" LastDependency="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AxisAndGrid" />
               <CategoryReference Kind="Category" Name="Layers" NeedsToBeDirectParent="true">
@@ -157,18 +138,12 @@
             <Pin Id="HOo00usxl6wNOp7LmMSWSZ" Name="Size" Kind="InputPin" />
             <Pin Id="Quwmu26KJx5LqnztaltVg7" Name="Resolution" Kind="InputPin" />
             <Pin Id="KmF2CrF9lI1Nt5YilnUSTs" Name="Grid Color" Kind="InputPin" />
-            <Pin Id="S0hidxqfr5DLFuZvWa4Jlt" Name="Grid Stroke Width" Kind="InputPin" />
             <Pin Id="EbLp2Z437oBMuW0lbo1sTk" Name="Axis Size" Kind="InputPin" />
-            <Pin Id="ExHVHtYQwccQPDOjyyDT4c" Name="Axis Stroke Width" Kind="InputPin" />
-            <Pin Id="E3nB8Z21CEsOnaUj9mvIgT" Name="Enabled" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="E3nB8Z21CEsOnaUj9mvIgT" Name="Enabled" Kind="InputPin" />
             <Pin Id="Vwtv9DkOOUBMrDyl6LnyTd" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="263,744,65,19" Id="CwPpKiyTSHNOqbkLRQ8Bod">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastSymbolSource="VL.Skia3d.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastDependency="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group" />
               <CategoryReference Kind="Category" Name="Skia3d" NeedsToBeDirectParent="true" />
@@ -180,7 +155,7 @@
             <Pin Id="FPWukj4EMpkMrPgAdj1NGw" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="263,805,105,19" Id="JM8m1I50AtsP5p29L5qdH2">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Transform" LastSymbolSource="VL.Skia3d.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Transform" LastDependency="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Camera (Orbit)" />
             </p:NodeReference>
@@ -194,7 +169,7 @@
             <Pin Id="OnME84bqruWOxqBId9i13H" Name="Idle" Kind="OutputPin" />
           </Node>
           <Node Bounds="339,697,44,19" Id="LlfY92eMxCFLkud1Z4JqDc">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastSymbolSource="VL.Skia3d.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastDependency="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
               <CategoryReference Kind="Category" Name="Skia3d" NeedsToBeDirectParent="true" />
@@ -204,42 +179,42 @@
             <Pin Id="KhyeTESZYutPRFXFriGkAE" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="To7rhiB9CXDLhbTkO5YRKs" Comment="Show Labels" Bounds="442,528,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="BVzPrFB6ahJNeeepZVjCFH" Comment="Show Axis" Bounds="441,484,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="VdgPWHrOSK2LLwBSLLuP8v" Comment="Body Tracking License String" Bounds="361,125,35,15" ShowValueBox="true" isIOBox="true" Value="">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="JCTqpHd9vFMLzUYejyAirx" Comment="Skeleton Profile" Bounds="401,159,78,15" ShowValueBox="true" isIOBox="true" Value="Full">
-            <p:TypeAnnotation LastCategoryFullName="Astra" LastSymbolSource="AstraDotNet.dll">
+            <p:TypeAnnotation LastCategoryFullName="Astra" LastDependency="AstraDotNet.dll">
               <Choice Kind="TypeFlag" Name="SkeletonProfile" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="HDoHYERHgcvOMSn0Uujqo8" Comment="Skeleton Optimization" Bounds="421,195,106,15" ShowValueBox="true" isIOBox="true" Value="Optimization5">
-            <p:TypeAnnotation LastCategoryFullName="Astra" LastSymbolSource="AstraDotNet.dll">
+            <p:TypeAnnotation LastCategoryFullName="Astra" LastDependency="AstraDotNet.dll">
               <Choice Kind="TypeFlag" Name="SkeletonOptimization" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="JKT7QPMKcHbLCQYeVz1hWl" Comment="Body Orientation" Bounds="441,234,52,15" ShowValueBox="true" isIOBox="true" Value="Top">
-            <p:TypeAnnotation LastCategoryFullName="Astra" LastSymbolSource="AstraDotNet.dll">
+            <p:TypeAnnotation LastCategoryFullName="Astra" LastDependency="AstraDotNet.dll">
               <Choice Kind="TypeFlag" Name="BodyOrientation" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="U9fxT1SWjwHQRKRJbSBAu5" Comment="Body Features" Bounds="461,278,91,15" ShowValueBox="true" isIOBox="true" Value="HandPose">
-            <p:TypeAnnotation LastCategoryFullName="Astra" LastSymbolSource="AstraDotNet.dll">
+            <p:TypeAnnotation LastCategoryFullName="Astra" LastDependency="AstraDotNet.dll">
               <Choice Kind="TypeFlag" Name="BodyTrackingFeatures" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="TDKQMFYFxDXPuvr2LvD7Dq" Bounds="555,298,433,66" ShowValueBox="true" isIOBox="true" Value="Segmentation: No features beyond minimal body mask segmentation &#xD;&#xA;Joints: Segmentation plus Tracking of joints &#xD;&#xA;HandPoses: Joints plus Recognition of hand poses &#xD;&#xA; &#xD;&#xA;">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -247,8 +222,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QAeVncm8NoqPWitZAG3xOg" Bounds="34,196,279,24" ShowValueBox="true" isIOBox="true" Value="https://orbbec3d.com/bodytracking-sdk/">
-            <p:TypeAnnotation>
+          <Pad Id="QAeVncm8NoqPWitZAG3xOg" Bounds="34,196,279,24" ShowValueBox="true" isIOBox="true" Value="https://shop.orbbec3d.com/Orbbec-Body-Tracking-License">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -257,7 +232,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="F0NwqtpqGMvM3SXnQADqq3" Bounds="34,129,246,66" ShowValueBox="true" isIOBox="true" Value="Requires a separate body tracking license, otherwise only works for 30 minutes!">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -294,6 +269,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="BRJnnZdh5eyMS3vQIp8RQ2" Location="VL.Skia" Version="2020.1.3" />
-  <NugetDependency Id="PzpGo5rWv4jQSJ9eRUYFcn" Location="VL.Skia3d" Version="0.0.0.0" />
-  <NugetDependency Id="RYGVKtm7zruPDa7vTNb59K" Location="VL.Devices.Astra" Version="0.0.0.0" />
+  <NugetDependency Id="PzpGo5rWv4jQSJ9eRUYFcn" Location="VL.Skia3d" Version="1.1.2" />
+  <NugetDependency Id="RYGVKtm7zruPDa7vTNb59K" Location="VL.Devices.Astra" Version="1.1.0" />
 </Document>
