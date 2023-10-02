@@ -1,5 +1,5 @@
 # VL.Devices.Astra
-Set of nodes to use the Astra depth camera from Orbbec in VL.
+A package for using [Astra](https://www.orbbec.com/products/#scroll-structured-light-camera) depth cameras by [Orbbec](https://www.orbbec.com/) in VL.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
