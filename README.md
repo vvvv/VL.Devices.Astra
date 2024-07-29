@@ -8,7 +8,7 @@ Download: http://visualprogramming.net
 * A recent vvvv version (>= 2020.1)
 * [Orbbec Camera Driver >= 4.3.0.10](https://orbbec3d.com/index/download.html)
 
-Currently using version 2.1.0 of the Astra SDK.
+Currently using version 2.1.0 of the [Astra SDK](https://www.orbbec.com/developers/astra-sdk/).
 
 Note that body tracking requires an extra license available in the [Orbbec Store](https://shop.orbbec3d.com/Orbbec-Body-Tracking-License), otherwise it only works for 30 minutes per launch!
 
